@@ -190,10 +190,30 @@
           в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
-          <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Отправить</span>
-          </button>
+          <input class="newsletter-field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section class="order">
+        <h2 class="order-title">Доставка любимого мороженого</h2>
+        <p class="order-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? 
+          Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="order-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="order-form-date">
+            <label class="label-date" for="order-date">Дата</label>
+            <input class="order-field-date" type="text" id="order-date" name="order-date" placeholder="01.04.2020">
+          </p>
+          <p class="order-form-tel">
+            <label class="label-tel" for="order-tel">Телефон</label>
+            <input  class="order-field-tel" type="text" id="order-tel" name="order-tel" placeholder="+7 800 999-00-00">
+          </p>
+          <p class="order-form-address">
+            <label class="label-address" for="order-address">Адрес</label>
+            <input  class="order-field-address" type="text" id="order-address" name="order-address" placeholder="ул. Большая Конюшенная, 19/8">
+          </p>
+          <button class="button order-button" type="submit">Отправить</button>
         </form>
       </section>
 
