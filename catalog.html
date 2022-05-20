@@ -10,10 +10,10 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link"><img class="logo" src="#" alt="Логотип магазина мороженного Глейси"></a>
+            <a class="navigation-link" href="index.html"><img class="logo" src="#" alt="Логотип магазина мороженного Глейси"></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -41,8 +41,30 @@
       </nav>
     </header>
 
-    <main class="main-catalog">
-
+    <main class="main-inner">
+      <header class="inner-header">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li> 
+          <li class="item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li> 
+        </ul>
+        <h1 class="inner-header-title">Каталог</h1>
+      </header>
+      <section class="catalog-products">
+        <ul class="product-list">
+          <li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Малинка</h3>
+            </a>
+            <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
+            <b class="product-card-price">310 ₽/кг</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+      </section>
     </main>
 
     <footer class="page-footer">
