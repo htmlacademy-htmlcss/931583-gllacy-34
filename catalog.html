@@ -51,19 +51,144 @@
             <a class="breadcrumbs-link">Каталог</a>
           </li> 
         </ul>
-        <h1 class="inner-header-title">Каталог</h1>
+        <h1 class="inner-header-title">Сливочное мороженое</h1>
       </header>
+      
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label class="filter-label" for="select-control">Сортировка:</label>
+              <select class="select-control" id="select-control">
+                <option value="popular">По популярности</option>
+              </select>
+            </li>
+            <li class="filter-item">
+              <label class="filter-label" for="range-price">Цена: 100 ₽ – 500 ₽</label>
+              <input class="range-price" type="range" id="range-price">
+            </li>
+            <li class="filter-item">
+              <fieldset class="filter-group">
+                <legend class="filter-label">Жирность:</legend>
+                <ul class="filter-group-list">
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="fat-content" value="0%">
+
+                    0%
+                    </label>
+                  </li>
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="fat-content" value="10%" checked>
+      
+                    до 10%
+                    </label>
+                  </li>
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="fat-content" value="30%">
+      
+                    до 30%
+                    </label>
+                  </li>
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="fat-content" value="over-30%">
+      
+                    выше 30%
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="filter-item">
+              <fieldset class="filter-group">
+                <legend class="filter-label">Наполнители:</legend>
+                <ul class="filter-group-list">
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="chocolate" checked>
+
+                    шоколадные
+                    </label>
+                  </li>
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="sugar-sprinkles" checked>
+      
+                    сахарные посыпки
+                    </label>
+                  </li>
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="fruits">
+      
+                    фрукты
+                    </label>
+                  </li>
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="syrups">
+      
+                    сиропы
+                    </label>
+                  </li>
+                  <li class="filter-group-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="jams">
+      
+                    джемы
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="filter-item">
+              <button class="button-filter" type="submit">Показать</button>
+            </li>
+          </ul>
+        </form>                               
+      </section>
+
       <section class="catalog-products">
+        <h2 class="visually-hidden">Каталог</h2>
         <ul class="product-list">
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="Малиновое мороженое">
               <h3 class="product-card-title">Малинка</h3>
             </a>
             <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
             <b class="product-card-price">310 ₽/кг</b>
-            <a class="product-card-button button" href="#">Купить</a>
+            <a class="product-card-button button" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
           </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="Фисташковое мороженое">
+              <h3 class="product-card-title">Фисташка</h3>
+            </a>
+            <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
+            <b class="product-card-price">340 ₽/кг</b>
+            <a class="product-card-button button" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="" alt="Черничное мороженое">
+              <h3 class="product-card-title">Черника</h3>
+            </a>
+            <p class="product-card-description">Крем-брюле с черничным джемом</p>
+            <b class="product-card-price">330 ₽/кг</b>
+            <a class="product-card-button button" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </li>   
+        </ul>
       </section>
     </main>
 
