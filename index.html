@@ -24,7 +24,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <span class="navigation-tel">+7 800 555-86-28</span>
+            <a class="navigation-tel" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -42,37 +42,64 @@
     </header>
 
     <main class="main-index">
+
       <h1 class="visually-hidden">Интернет-магазин мороженного Глейси</h1>
+
       <section class="slider">
         <h2 class="visually-hidden">Слайдер мороженного</h2>
-        <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
-        <p class="slider-description">Натуральное мороженное из свежих сливок и молока с вкуснейшим 
-          клубничным джемом - это идеальный десерт для всей семьи.
-        </p>
-        <a class="slider-button" href="#">Заказать</a>
-        <img class="slider-image slider-image-big" src="#" alt="Клубничный пломбир">
+        <div class="slide">
+          <h3 class="slide-title">Нежный пломбир с клубничным джемом</h3>
+          <p class="slide-description">Натуральное мороженное из свежих сливок и молока с вкуснейшим 
+            клубничным джемом - это идеальный десерт для всей семьи.
+          </p>
+          <a class="slide-button" href="#">Заказать</a>
+          <img class="slide-image slider-image-big" src="#" alt="Клубничный пломбир">
+          <img class="slide-image slider-image-small" src="#" alt="Банановый пломбир">
+          <img class="slide-image slider-image-small" src="#" alt="Пломбир с маршмеллоу">
+        </div>
+
+        <div class="slide">
+          <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
+          <p class="slide-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть 
+            и наслаждение даже в самый жаркий летний день. 
+          </p>
+          <a class="slide-button" href="#">Заказать</a>
+          <img class="slide-image slider-image-big" src="#" alt="Банановый пломбир">   
+          <img class="slide-image slider-image-small" src="#" alt="Пломбир с маршмеллоу">
+          <img class="slide-image slider-image-small" src="#" alt="Клубничный пломбир">
+        </div>
+
+        <div class="slide">
+          <h3 class="slide-title">Карамельный пломбир с маршмеллоу</h3>
+          <p class="slide-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет 
+            сердца сладкоежек всех возрастов.
+          </p>
+          <a class="slide-button" href="#">Заказать</a>
+          <img class="slide-image slider-image-big" src="#" alt="Пломбир с маршмеллоу"> 
+          <img class="slide-image slider-image-small" src="#" alt="Клубничный пломбир">
+          <img class="slide-image slider-image-small" src="#" alt="Банановый пломбир">
+        </div>
+
         <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
+          <span class="visually-hidden">Предыдущий слайд</span>
         </button>
         <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
+          <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <img class="slider-image slider-image-small" src="#" alt="Банановый пломбир">
-        <img class="slider-image slider-image-small" src="#" alt="Пломбир с маршмеллоу">
         <ol class="slider-flip">
           <li class="slider-flip-item">
             <button class="slider-flip-button slider-flip-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
+              <span class="visually-hidden">1 слайд</span>
             </button>
           </li>
           <li class="slider-flip-item">
             <button class="slider-flip-button" type="button">
-              <span class="visually-hidden">2 фото</span>
+              <span class="visually-hidden">2 слайд</span>
             </button>
           </li>
           <li class="slider-flip-item">
             <button class="slider-flip-button" type="button">
-              <span class="visually-hidden">3 фото</span>
+              <span class="visually-hidden">3 слайд</span>
             </button>
           </li>
         </ol>
@@ -94,7 +121,7 @@
           </li>
         </ul>
       </section>
-
+      
       <section class="gifts">
         <h2 class="gifts-title">Заказывайте мороженное и получайте подарки!</h2>
         <ul class="gifts-list">
@@ -215,7 +242,7 @@
           </p>
           <p class="order-form-tel">
             <label class="order-label-tel" for="order-tel">Телефон</label>
-            <input  class="order-field-tel" type="text" id="order-tel" name="order-tel" placeholder="+7 800 999-00-00" required>
+            <input  class="order-field-tel" type="tel" id="order-tel" name="order-tel" placeholder="+7 800 999-00-00" required>
           </p>
           <p class="order-form-address">
             <label class="order-label-address" for="order-address">Адрес</label>
@@ -231,9 +258,9 @@
           <p class="contacts-legends">Адрес главного офиса и офлайн-магазина:</p>
           <p class="address-shop">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
           <p class="contacts-legends">Для заказов по телефону:</p>
-          <p class="tel-shop">+7 (812) 812-12-12</p>
+          <a class="tel-shop" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <p class="working-hours">(с 10 до 20 ежедневно)</p>
-          <button class="button contacts-button" type="submit">Форма обратной связи</button>
+          <button class="button contacts-button" type="button">Форма обратной связи</button>
         </address>
       </section>
     </main>
