@@ -106,7 +106,12 @@ body {
   line-height: 24px;
 }
 
+
 /* Gifts */
+.gifts-item {
+  background-color: #FF7799;
+}
+
 .gifts-title {
   font-size: 32px;
   line-height: 46px;
@@ -120,7 +125,12 @@ body {
   font-weight: 700;
 }
 
+
 /* Popular Product */
+.product-card {
+  background-color: #FCFCFC;
+}
+
 .popular-product-title {
   font-size: 32px;
   line-height: 46px;
@@ -145,14 +155,32 @@ font-weight: 700;
   font-weight: 700;
 }
 
+
 /* Advantages */
+.advantages {
+  width: 1170px;
+  height: 480px;
+  background-color: #FCFCFC;
+  background-image: url("../images/wafer_background.jpg");
+  background-repeat: repeat;
+}
+
 .advantages-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
 }
 
+
 /* News from Blog */
+.blog {
+  width: 570px;
+  height: 224px;
+  background-color: #FCFCFC;
+  background-image: url("../images/blog_background.jpg");
+  background-repeat: no-repeat;
+}
+
 .blog-description {
   line-height: 20px;
 }
@@ -168,8 +196,19 @@ font-weight: 700;
   text-decoration: none;
 }
 
-/* Delivary */
-.delivary-title {
+
+/* Newsletter */
+.newsletter {
+  width: 570px;
+  height: 224px;
+  background-color: #FCFCFC;
+  background-image: url("../images/newsletter_background.png");
+  background-repeat: no-repeat;
+}
+
+
+/* Delivery */
+.delivery-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -179,6 +218,7 @@ font-weight: 700;
   line-height: 20px;
   font-weight: 700;
 }
+
 
 /* Contacts */
 .address-shop {
