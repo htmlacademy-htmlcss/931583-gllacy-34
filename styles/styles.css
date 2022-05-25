@@ -54,6 +54,24 @@ body {
   background-color: #FEAFC3;
 }
 
+.button {
+  font-family: inherit;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-pink {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+
+/* HEADER */
 .page-header {
   line-height: 20px;
 }
@@ -73,6 +91,10 @@ body {
   font-weight: 700;
 }
 
+
+/* MAIN */
+
+/* Slider */
 .slide-title {
   font-size: 36px;
   line-height: 46px;
@@ -84,15 +106,7 @@ body {
   line-height: 24px;
 }
 
-.link-button {
-  color: #2D3440;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-}
-
+/* Gifts */
 .gifts-title {
   font-size: 36px;
   line-height: 46px;
@@ -105,3 +119,29 @@ body {
   line-height: 30px;
   font-weight: 700;
 }
+
+/* Popular Product */
+.popular-product-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.product-card-link {
+  color:#2D3440;
+  text-decoration: none;
+}
+
+.product-card-title {
+font-size: 20px;
+line-height: 24px;
+font-weight: 700;
+}
+
+.product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  }
+
