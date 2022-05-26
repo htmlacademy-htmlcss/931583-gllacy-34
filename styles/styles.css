@@ -22,30 +22,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter-400.woff2") format("woff2");
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter-700.woff2") format("woff2");
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter-900.woff2") format("woff2");
-  font-style: italic;
-  font-weight: 900;
-  font-display: swap;
-}
-
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -127,10 +103,6 @@ body {
 
 
 /* Popular Product */
-.product-card {
-  background-color: #FCFCFC;
-}
-
 .popular-product-title {
   font-size: 32px;
   line-height: 46px;
@@ -158,24 +130,21 @@ font-weight: 700;
 
 /* Advantages */
 .advantages {
-  width: 1170px;
-  height: 480px;
   background-color: #FCFCFC;
   background-image: url("../images/wafer_background.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
 .advantages-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  text-align: center;
 }
 
 
 /* News from Blog */
 .blog {
-  width: 570px;
-  height: 224px;
   background-color: #FCFCFC;
   background-image: url("../images/blog_background.jpg");
   background-repeat: no-repeat;
@@ -199,8 +168,6 @@ font-weight: 700;
 
 /* Newsletter */
 .newsletter {
-  width: 570px;
-  height: 224px;
   background-color: #FCFCFC;
   background-image: url("../images/newsletter_background.png");
   background-repeat: no-repeat;
@@ -208,6 +175,12 @@ font-weight: 700;
 
 
 /* Delivery */
+.delivary {
+  background-color: #FCFCFC;
+  background-image: url("../images/delivery_background.jpg");
+  background-repeat: no-repeat;
+}
+
 .delivery-title {
   font-size: 32px;
   line-height: 46px;
@@ -221,6 +194,12 @@ font-weight: 700;
 
 
 /* Contacts */
+.contacts {
+  background-color: #FCFCFC;
+  background-image: url("../images/contacts_background.jpg");
+  background-repeat: no-repeat;
+}
+
 .address-shop {
   font-size: 20px;
   line-height: 20px;
@@ -242,7 +221,7 @@ font-weight: 700;
 
 
 /* Footer */
-.footer-link {
+.page-footer a {
   color:#2D3440;
   font-size: 14px;
   line-height: 20px;
@@ -258,7 +237,23 @@ font-weight: 700;
   line-height: 16px;
 }
 
-.htmlacademy-link {
-  color:#2D3440;
+/* Catalog */
+.breadcrumbs-link {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  color: #2D3440;
+  line-height: 20px;
+  text-decoration: none;
 }
 
