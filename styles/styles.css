@@ -220,7 +220,7 @@ body {
 
 
 /* Footer */
-.page-footer a {
+.footer-link {
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
@@ -232,6 +232,12 @@ body {
 }
 
 .copyright-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link {
+  color: #2D3440;
   font-size: 12px;
   line-height: 16px;
 }
