@@ -69,7 +69,6 @@ body {
 
 
 /* MAIN */
-
 /* Slider */
 .slide-title {
   font-size: 36px;
@@ -111,14 +110,14 @@ body {
 }
 
 .product-card-link {
-  color:#2D3440;
+  color: #2D3440;
   text-decoration: none;
 }
 
 .product-card-title {
-font-size: 20px;
-line-height: 24px;
-font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .product-card-price {
@@ -161,7 +160,7 @@ font-weight: 700;
 }
 
 .blog-title-link {
-  color:#2D3440;
+  color: #2D3440;
   text-decoration: none;
 }
 
@@ -207,7 +206,7 @@ font-weight: 700;
 }
 
 .tel-shop {
-  color:#2D3440;
+  color: #2D3440;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
@@ -222,7 +221,7 @@ font-weight: 700;
 
 /* Footer */
 .page-footer a {
-  color:#2D3440;
+  color: #2D3440;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
@@ -256,4 +255,3 @@ font-weight: 700;
   line-height: 20px;
   text-decoration: none;
 }
-
