@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.button {
+  font-family: inherit;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-pink {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+
+/* HEADER */
+.page-header {
+  line-height: 20px;
+}
+
+.navigation-link {
+  color: #2D3440;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-user {
+  font-size: 14px;
+}
+
+.navigation-tel {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* MAIN */
+/* Slider */
+.slide-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.slide-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+/* Gifts */
+.gifts-item {
+  background-color: #FF7799;
+}
+
+.gifts-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.gifts-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+
+/* Products */
+.popular-product-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.product-card-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-card-description {
+  color: #565C66;
+}
+
+.product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+
+/* Advantages */
+.advantages {
+  background-color: #FCFCFC;
+  background-image: url("../images/wafer_background.jpg");
+  background-repeat: no-repeat;
+}
+
+.advantages-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.advantages-description {
+  color: #565C66;
+}
+
+
+/* News from Blog */
+.blog {
+  background-color: #FCFCFC;
+  background-image: url("../images/blog_background.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-description {
+  color: #565C66;
+  line-height: 20px;
+}
+
+.blog-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.blog-title-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+
+
+/* Newsletter */
+.newsletter {
+  background-color: #FCFCFC;
+  background-image: url("../images/newsletter_background.png");
+  background-repeat: no-repeat;
+}
+
+.newsletter-description {
+  color: #565C66;
+}
+
+
+/* Delivery */
+.delivery {
+  background-color: #FCFCFC;
+  background-image: url("../images/delivery_background.jpg");
+  background-repeat: no-repeat;
+}
+
+.delivery-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+.delivery-form-description {
+  color: #565C66;
+}
+
+.delivery-label {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+
+/* Contacts */
+.contacts {
+  background-color: #FCFCFC;
+  background-image: url("../images/contacts_background.jpg");
+  background-repeat: no-repeat;
+}
+
+.contacts-legends {
+  color: #565C66;
+}
+
+.address-shop {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tel-shop {
+  color: #2D3440;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.working-hours {
+  color: #565C66;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+/* Footer */
+.footer-link {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer-link-bold {
+  font-weight: 700;
+}
+
+.copyright-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link {
+  color: #2D3440;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Catalog */
+.inner-header-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.breadcrumbs-link {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  color: #2D3440;
+  line-height: 20px;
+  text-decoration: none;
+}
