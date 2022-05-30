@@ -274,9 +274,22 @@ body {
 
 /* Delivery */
 .delivery {
+  display: flex;
+  padding: 64px;
   background-color: #FCFCFC;
   background-image: url("../images/delivery_background.jpg");
   background-repeat: no-repeat;
+}
+
+.delivery-container {
+  width: 371px;
+  margin-left: 36px;
+  margin-right: 135px;
+}
+
+.delivery-form {
+  width: 500px;
+  background-color: #FCFCFC;
 }
 
 .delivery-title {
@@ -304,6 +317,12 @@ body {
   background-color: #FCFCFC;
   background-image: url("../images/contacts_background.jpg");
   background-repeat: no-repeat;
+  padding: 64px;
+}
+
+.contacts-container {
+  width: 343px;
+  background-color: #FCFCFC;
 }
 
 .contacts-legends {
@@ -407,6 +426,7 @@ body {
 }
 
 .filter {
+  width: 823px;
   font-size: 14px;
   line-height: 20px;
 }

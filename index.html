@@ -50,7 +50,7 @@
 
       <section class="slider">
         <h2 class="visually-hidden">Слайдер мороженного</h2>
-        <article class="slide">
+        <div class="slide">
           <div class="slide-content">
             <h3 class="slide-title">Нежный пломбир с клубничным джемом</h3>
             <p class="slide-description">Натуральное мороженное из свежих сливок и молока с вкуснейшим
@@ -60,9 +60,9 @@
           </div>
           <img class="slide-image slider-image-big" src="images/slides/slide_strawberry.png" width="306" height="507"
             alt="Клубничный пломбир">
-        </article>
+        </div>
 
-        <article class="slide">
+        <div class="slide">
           <div class="slide-content">
             <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
             <p class="slide-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
@@ -72,9 +72,9 @@
           </div>
           <img class="slide-image slider-image-big" src="images/slides/slide_banana.png" width="306" height="507"
             alt="Банановый пломбир">
-        </article>
+        </div>
 
-        <article class="slide">
+        <div class="slide">
           <div class="slide-content">
             <h3 class="slide-title">Карамельный пломбир с маршмеллоу</h3>
             <p class="slide-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
@@ -83,7 +83,7 @@
             <a class="button" href="#">Заказать</a>
           </div>
           <img class="slide-image slider-image-big" src="images/slides/slide_marshmallow.png" alt="Пломбир с маршмеллоу">
-        </article>
+        </div>
 
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
@@ -250,9 +250,11 @@
       </div>
 
       <section class="delivery">
-        <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
-          Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <div class="delivery-container">
+          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
+            Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
             заказ.
@@ -277,15 +279,17 @@
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты магазина</h2>
-        <p class="contacts-legends">Адрес главного офиса и офлайн-магазина:</p>
-        <address class="contacts-address">
-          <p class="address-shop">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        </address>
-        <p class="contacts-legends">Для заказов по телефону:</p>
-        <a class="tel-shop" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <p class="working-hours">(с 10 до 20 ежедневно)</p>
-        <button class="button button-pink" type="button">Форма обратной связи</button>
+        <div class="contacts-container">
+          <h2 class="visually-hidden">Контакты магазина</h2>
+          <p class="contacts-legends">Адрес главного офиса и офлайн-магазина:</p>
+          <address class="contacts-address">
+            <p class="address-shop">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+          </address>
+          <p class="contacts-legends">Для заказов по телефону:</p>
+          <a class="tel-shop" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <p class="working-hours">(с 10 до 20 ежедневно)</p>
+          <button class="button button-pink" type="button">Форма обратной связи</button>
+        </div>
       </section>
     </div>
   </main>
