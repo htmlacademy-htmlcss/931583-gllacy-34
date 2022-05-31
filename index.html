@@ -93,7 +93,7 @@
         </button>
 
         <div class="slider-social-container">
-          <ol class="slider-flip">
+          <ol class="slider-flip-list">
             <li class="slider-flip-item">
               <button class="slider-flip-button slider-flip-button-current" type="button">
                 <span class="visually-hidden">1 слайд</span>
@@ -148,9 +148,9 @@
         </ul>
       </section>
 
-      <section class="popular-product">
-        <h2 class="popular-product-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul class="popular-product-list">
+      <section class="popular-products">
+        <h2 class="popular-products-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul class="popular-products-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/products/raspberry.jpg" width="168" height="168"
@@ -203,27 +203,29 @@
       </section>
 
       <section class="advantages">
-        <h2 class="advantages-title">Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженого
-          собственного производства на развес</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <p class="advantages-description">Всё наше мороженое изготавливается на собственном
-              производстве с использованием современного оборудования и проверенных временем технологий.</p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages-description">Закупка ингредиентов производится только
-              у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
-              качества. Все ингредиенты
-              и добавки произведены из натурального сырья.</p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages-description">Доставка нашего мороженого осуществляется
-              в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
-          </li>
-        </ul>
+        <div class="advantages-container">
+          <h2 class="advantages-title">Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженого
+            собственного производства на развес</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <p class="advantages-description">Всё наше мороженое изготавливается на собственном
+                производстве с использованием современного оборудования и проверенных временем технологий.</p>
+            </li>
+            <li class="advantages-item">
+              <p class="advantages-description">Закупка ингредиентов производится только
+                у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+            </li>
+            <li class="advantages-item">
+              <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
+                качества. Все ингредиенты
+                и добавки произведены из натурального сырья.</p>
+            </li>
+            <li class="advantages-item">
+              <p class="advantages-description">Доставка нашего мороженого осуществляется
+                в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div class="blog-newsletter-container">
@@ -236,16 +238,18 @@
         </section>
 
         <section class="newsletter">
-          <h2 class="visually-hidden">Подписка на нашу рассылку</h2>
-          <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
-            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-            Честно =)</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
-            <input class="newsletter-field" placeholder="email@example.com" type="email" name="newsletter-email"
-              id="newsletter-email" required>
-            <button class="button button-pink" type="submit">Отправить</button>
-          </form>
+          <div class="newsletter-container">
+            <h2 class="visually-hidden">Подписка на нашу рассылку</h2>
+            <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
+              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+              Честно =)</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email">Email</label>
+              <input class="newsletter-field" placeholder="email@example.com" type="email" name="newsletter-email"
+                id="newsletter-email" required>
+              <button class="button button-pink" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
 

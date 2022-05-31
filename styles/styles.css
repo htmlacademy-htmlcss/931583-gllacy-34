@@ -96,14 +96,11 @@ body {
 
 .navigation-logo {
   margin-right: 16px;
+  line-height: 0;
 }
 
-.navigation-user .navigation-item {
+.navigation-user .navigation-item:not(:last-child) {
   margin-right: 16px;
-}
-
-.navigation-user .navigation-item:last-child {
-  margin-right: 0;
 }
 
 .navigation-user .navigation-link {
@@ -125,7 +122,6 @@ body {
 
 
 /* MAIN */
-
 .main-container {
   flex-grow: 1;
 }
@@ -136,6 +132,10 @@ body {
 }
 
 /* Slider */
+.slider {
+  margin-bottom: 80px;
+}
+
 .slide {
   display: flex;
 }
@@ -152,10 +152,11 @@ body {
   justify-content: space-between;
 }
 
-.slider-flip {
+.slider-flip-list {
   display: flex;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .social-list {
@@ -180,16 +181,23 @@ body {
 
 
 /* Gifts */
+.gifts {
+  margin-bottom: 81px;
+}
+
 .gifts-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .gifts-item {
   width: 570px;
   background-color: #FF7799;
+  padding: 36px;
+  box-sizing: border-box;
 }
 
 .gifts-title {
@@ -197,33 +205,51 @@ body {
   line-height: 46px;
   font-weight: 900;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 55px;
 }
 
 .gifts-item-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.gifts-description {
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 
 /* Products */
-.popular-product-list {
+.popular-products {
+  margin-bottom: 80px;
+}
+
+.popular-products-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.popular-products-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 56px;
 }
 
 .product-card {
   background-color: #FCFCFC;
   width: 270px;
-}
-
-.popular-product-title {
-  font-size: 32px;
-  line-height: 46px;
-  font-weight: 900;
-  text-align: center;
+  padding: 0 40px 24px 40px;
+  box-sizing: border-box;
 }
 
 .product-card-link {
@@ -235,10 +261,16 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .product-card-description {
   color: #565C66;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .product-card-price {
@@ -253,17 +285,49 @@ body {
   background-color: #FCFCFC;
   background-image: url("../images/wafer_background.jpg");
   background-repeat: no-repeat;
+  padding: 24px;
+  margin-bottom: 80px;
 }
+
+.advantages-container {
+  background-color: #FCFCFC;
+  padding: 56px 40px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-item {
+  flex-basis: 506px;
+}
+
+.advantages-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.advantages-item:nth-child(1) {
+  margin-bottom: 40px;
+}
+ 
 
 .advantages-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 56px;
 }
 
 .advantages-description {
   color: #565C66;
+  margin: 0;
 }
 
 
@@ -271,6 +335,7 @@ body {
 .blog-newsletter-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .blog {
@@ -278,17 +343,22 @@ body {
   background-color: #FCFCFC;
   background-image: url("../images/blog_background.jpg");
   background-repeat: no-repeat;
+  padding: 32px;
+  box-sizing: border-box;
 }
 
 .blog-description {
   color: #565C66;
   line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .blog-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
 }
 
 .blog-title-link {
@@ -303,41 +373,57 @@ body {
   background-color: #FCFCFC;
   background-image: url("../images/newsletter_background.png");
   background-repeat: no-repeat;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.newsletter-container {
+  background-color: #FCFCFC;
+  padding: 26px;
 }
 
 .newsletter-description {
   color: #565C66;
+  margin-top: 0;
+  margin-bottom: 42px;
 }
 
 
 /* Delivery */
 .delivery {
   display: flex;
+  align-items: center;
   padding: 64px;
   background-color: #FCFCFC;
   background-image: url("../images/delivery_background.jpg");
   background-repeat: no-repeat;
+  margin-bottom: 80px;
+  padding: 64px 64px 64px 100px;
 }
 
 .delivery-container {
   width: 371px;
-  margin-left: 36px;
   margin-right: 135px;
 }
 
 .delivery-form {
   width: 500px;
   background-color: #FCFCFC;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .delivery-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .delivery-description {
   color: #565C66;
+  margin: 0;
 }
 
 .delivery-form-description {
@@ -361,10 +447,14 @@ body {
 .contacts-container {
   width: 343px;
   background-color: #FCFCFC;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .contacts-legends {
   color: #565C66;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .address-shop {
@@ -372,6 +462,8 @@ body {
   line-height: 20px;
   font-weight: 700;
   font-style: normal;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .tel-shop {
@@ -380,18 +472,21 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
+  margin: 0;
 }
 
 .working-hours {
   color: #565C66;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 
 /* Footer */
 .page-footer {
-  margin: 0 auto;
+  margin: 48px auto;
   width: 1170px;
 }
 
@@ -421,16 +516,26 @@ body {
 
 .footer-links-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 332px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.footer-links-item {
+  min-width: 150px;
 }
 
 .footer-link {
+  display: block;
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .footer-link-bold {
@@ -440,12 +545,18 @@ body {
 .copyright-description {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .htmlacademy-link {
   color: #2D3440;
   font-size: 12px;
   line-height: 16px;
+}
+
+.htmlacademy-logo-link {
+  line-height: 0;
+  margin-bottom: 14px;
 }
 
 /* Catalog */
