@@ -12,12 +12,12 @@
   <header class="page-header">
     <nav class="navigation">
       <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html"><img class="logo" src="images/logo_gllacy.svg" width="137"
-              height="56" alt="Логотип магазина мороженного Глейси"></a>
+        <li class="navigation-item navigation-logo">
+          <a class="logo-link" href="index.html"><img class="logo" src="images/logo_gllacy.svg" width="137" height="56"
+              alt="Логотип магазина мороженного Глейси"></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+          <a class="navigation-link" href="catalog.html">Каталог</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -52,7 +52,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
-          <li class="item">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Каталог</a>
           </li>
         </ul>
@@ -161,7 +161,7 @@
 
       <section class="catalog-products">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul class="product-list">
+        <ul class="products-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/products/raspberry.jpg" width="168" height="168"
@@ -308,35 +308,37 @@
           </li>
         </ul>
 
-        <button class="button" type="button">Показать ещё</button>
+        <div class="pagination-container">
+          <button class="button button-pagination" type="button">Показать ещё</button>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </main>
@@ -348,17 +350,17 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-button button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
+              <span>Т</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте</span>
+              <span>В</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button button" href="https://youtube.com/user/htmlacademy">
-              <span class="visually-hidden">Youtube</span>
+              <span>Y</span>
             </a>
           </li>
         </ul>
