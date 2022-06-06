@@ -339,6 +339,35 @@ body {
   list-style-type: none;
 }
 
+.advantages-item {
+  position: relative;
+  margin-left: 64px;
+}
+
+.advantages-item::before {
+  position: absolute;
+  left: -64px;
+  width: 48px;
+  height: 48px;
+  content: "";
+}
+
+.advantages-item:nth-child(1)::before{
+  background: no-repeat url("../images/icons/ice-cream.svg");
+}
+
+.advantages-item:nth-child(2)::before{
+  background: no-repeat url("../images/icons/cow.svg");
+}
+
+.advantages-item:nth-child(3)::before{
+  background: no-repeat url("../images/icons/leaf.svg");
+}
+
+.advantages-item:nth-child(4)::before{
+  background: no-repeat url("../images/icons/thermometer.svg");
+}
+
 
 /* News from Blog */
 .blog-newsletter-container {
