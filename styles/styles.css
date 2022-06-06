@@ -53,11 +53,32 @@ body {
   font-family: inherit;
   color: #2D3440;
   background-color: #FCFCFC;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  padding: 12px 32px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+}
+
+.button-card {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: #FF2F64;
+  border-radius: 26px;
+}
+
+.button-card-icon {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .button-pink {
@@ -103,10 +124,6 @@ body {
   margin-right: 16px;
 }
 
-.navigation-user .navigation-link {
-  padding: 6px 0;
-}
-
 .navigation-link {
   display: block;
   padding: 8px 16px;
@@ -115,9 +132,47 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-user {
+  position: relative;
+  display: block;
+  color: #2D3440;
+  text-align: center;
+  text-decoration: none;
+}
+
 .navigation-tel {
+  padding: 6px 0 6px;
   font-size: 16px;
   font-weight: 700;
+}
+
+.navigation-search {
+  background:rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+  padding: 16px;
+}
+
+.navigation-card,
+.navigation-login {
+  padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.navigation-card .navigation-icon,
+.navigation-login .navigation-icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
 }
 
 
@@ -145,18 +200,12 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 540px;
+  align-items: flex-start;
 }
 
 .slider-social-container {
   display: flex;
   justify-content: space-between;
-}
-
-.slider-flip-list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
 }
 
 .slide-title {
@@ -184,6 +233,29 @@ body {
   list-style-type: none;
 }
 
+.social-icon {
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.slider-flip-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.slider-flip-button {
+  height: 12px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
 
 /* Gifts */
 .gifts {
@@ -191,18 +263,31 @@ body {
 }
 
 .gifts-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .gifts-item {
-  width: 570px;
-  background-color: #FF7799;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 36px;
   box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.gifts-item-raspberry {
+  background: no-repeat url('../images/raspberry_gifts.png') #FF7799;
+  background-position: 100%;
+}
+
+.gifts-item-marshmellow {
+  background: no-repeat url('../images/marshmellow_gifts.png') #FF7799;
+  background-position: 100%;
 }
 
 .gifts-title {
@@ -223,6 +308,7 @@ body {
 }
 
 .gifts-description {
+  width: 328px;
   margin-top: 0;
   margin-bottom: 28px;
 }
@@ -622,6 +708,7 @@ gap: 16px 20px;
   display: flex;
   flex-direction: column;
   background-color: #FCFCFC;
+  border-radius: 8px;
   padding: 0 40px 24px 40px;
 }
 
@@ -655,4 +742,10 @@ gap: 16px 20px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.product-card-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
