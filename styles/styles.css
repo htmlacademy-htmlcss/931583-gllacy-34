@@ -155,29 +155,76 @@ body {
 
 .slide {
   display: flex;
+  align-items: center;
 }
 
 .slide-content {
   display: flex;
+  width: 470px;
   flex-direction: column;
   justify-content: center;
-  width: 540px;
   align-items: flex-start;
+  margin-left: 70px;
 }
 
 .slide-image-container {
   position: relative;
   width: 312px;
   height: 312px;
-  background-color: #ffffff;
+  background-color: #FFCBD8;
   border-radius: 50%;
   margin: 121px 21px 95px;
+}
+
+.slide-image-small-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #FFCBD8;
+  border-radius: 50%;
+  opacity: 40%;
+  margin: 0 0 0 37px;
 }
 
 .slide-image {
   display: block;
   position: absolute;
-  top: calc(50% - 507px/2);
+  top: calc(50% - 254px);
+}
+
+.slide-image-small {
+  transform: scale(0.3);
+  left: -103px;
+}
+
+.slider-button {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: calc(50% - 18px);
+  background: no-repeat  rgba(252, 252, 252, 0.3) center;
+  border-radius: 50%;
+  border:2px solid #FCFCFC;
+  color: #FCFCFC;
+  cursor: pointer;
+}
+
+.slider-button-prev {
+  left: -18px;
+}
+
+.slider-button-next {
+  right: -18px;
+}
+
+.slider-button-next-icon,
+.slider-button-prev-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 .slider-social-container {
@@ -208,6 +255,10 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.social-button {
+  color:#FCFCFC;
 }
 
 .social-icon {
@@ -603,7 +654,6 @@ gap: 16px 20px;
   gap: 8px 24px;
   padding: 0;
   margin: 0;
-  margin-left: auto;
   list-style-type: none;
 }
 
@@ -856,6 +906,7 @@ gap: 16px 20px;
   height: 32px;
   background: #FF2F64;
   border-radius: 26px;
+  color: #FCFCFC;
 }
 
 .button-card-icon {
