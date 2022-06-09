@@ -202,6 +202,7 @@ body {
 .slide {
   display: flex;
   align-items: center;
+  padding-top: 21px;
 }
 
 .slide-content {
@@ -216,7 +217,7 @@ body {
 .slide-image-container {
   position: relative;
   width: 312px;
-  margin: 21px 21px 26px 21px;
+  margin: 0 21px 0 21px;
 }
 
 .slide-image-container::before {
@@ -234,7 +235,7 @@ body {
 .slide-image-small-container {
   position: relative;
   width: 100px;
-  height: 181px;
+  height: 150px;
   opacity: 40%;
   margin-left: 41px;
 }
@@ -257,8 +258,8 @@ body {
 }
 
 .slide-image-small {
-  max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  width: auto;
 }
 
 .slider-button {
@@ -301,11 +302,11 @@ body {
 }
 
 .slider-button-prev {
-  left: -21px;
+  left: -18px;
 }
 
 .slider-button-next {
-  right: -21px;
+  right: -22px;
 }
 
 .slider-button-next-icon,
@@ -582,6 +583,7 @@ body {
 }
 
 .blog-title {
+  width: 300px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
