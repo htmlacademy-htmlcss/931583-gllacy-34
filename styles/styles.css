@@ -71,6 +71,10 @@ body {
   list-style-type: none;
 }
 
+.navigation-item {
+  position: relative;
+}
+
 .navigation-user {
   width: 450px;
   margin-left: auto;
@@ -1511,4 +1515,64 @@ body {
   font-weight: 400;
   background-color: #B9B9B9;
   outline: 4px solid rgba(185, 185, 185, 0.3);
+}
+
+
+/* POPOVERS */
+/* Search */
+.popover {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+}
+
+.popover-search {
+  padding: 24px 16px;
+  display: none;
+}
+
+.popover-search-field {
+  width: 324px;
+}
+
+/* Popover Catalog */
+.popover-catalog {
+  position: relative;
+  min-width: 135px;
+  left: 0;
+  padding: 8px 0;
+}
+
+.popover-catalog-list {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.popover-catalog-link {
+  display: block;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.popover-catalog-new::after {
+  position: absolute;
+  height: 2px;
+  width: 4px;
+  background-color: #EA5454;
+  margin: 4px 0;
+  content: "";
 }
