@@ -13,13 +13,33 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item navigation-logo">
-            <a class="logo-link" href="index.html">
+            <a class="logo-link">
               <img class="logo" src="images/logo_gllacy.svg" width="137" height="56"
                 alt="Логотип магазина мороженного Глейси">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-active" href="catalog.html">Каталог</a>
+            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+            <div class="popover popover-catalog">
+              <ul class="popover-catalog-list">
+                <li class="popover-catalog-item">
+                  <a class="popover-catalog-link" href="#">Новинки</a>
+                </li>
+                <p class="popover-catalog-line"></p>
+                <li class="popover-catalog-item">
+                  <a class="popover-catalog-link" href="#">Сливочное</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="popover-catalog-link" href="#">Щербеты</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="popover-catalog-link" href="#">Фруктовый лёд</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="popover-catalog-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -41,6 +61,12 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="popover popover-search">
+              <form class="popover-search-form">
+                <label class="visually-hidden" for="search-input">Поиск</label>
+                <input class="field popover-search-field" type="search" name="search" id="search-input" placeholder="Поиск по сайту">
+              </form>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-user navigation-login" href="#">
