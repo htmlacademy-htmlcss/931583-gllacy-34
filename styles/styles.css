@@ -1008,6 +1008,16 @@ body {
   appearance: none;
 }
 
+.select-control:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.select-control:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: inset 0 0 0 2px #FCFCFC;
+  outline: none;
+}
+
 /* Range */
 .range-wrapper-inputs {
   display: flex;
@@ -1053,6 +1063,27 @@ body {
   background-color: #FCFCFC;
   border-radius: 50%;
   content: "";
+}
+
+.range-toggle:hover {
+  background-color: #FCFCFC;
+}
+
+.range-toggle:hover::before {
+  background-color: #2D3440;
+}
+
+.range-toggle:active {
+  background-color: #2D3440;
+}
+
+.range-toggle:focus-visible {
+  background-color: #FCFCFC;
+  outline: 2px solid #2D3440;
+}
+
+.range-toggle:focus-visible::before {
+  background-color: #2D3440;
 }
 
 .toggle-min {
@@ -1112,6 +1143,26 @@ body {
   background-image: url("../images/icons/checkbox-checked.svg");
 }
 
+.control-input[type="checkbox"]:hover + .control-mark {
+  background-image: url("../images/icons/checkbox-hover.svg");
+}
+
+.control-input[type="checkbox"]:checked:hover + .control-mark {
+  background-image: url("../images/icons/checkbox-checked-hover.svg");
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark,
+.control-input[type="checkbox"]:disabled:hover + .control-mark {
+  background-image: url("../images/icons/checkbox.svg");
+  opacity: 0.5;
+}
+
+.control-input[type="checkbox"]:disabled:checked + .control-mark,
+.control-input[type="checkbox"]:disabled:checked:hover + .control-mark {
+  background-image: url("../images/icons/checkbox-checked.svg");
+  opacity: 0.5;
+}
+
 .control-input[type="radio"] + .control-mark {
   width: 13.4px;
   height: 13.4px;
@@ -1128,6 +1179,24 @@ body {
   background-color: #2D3440;
   border-radius: 50%;
   content: "";
+}
+
+.control-input[type="radio"]:hover + .control-mark {
+  border-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:hover + .control-mark::before {
+  background-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:disabled + .control-mark,
+.control-input[type="radio"]:hover:disabled + .control-mark {
+  border: 1.3px solid rgba(45, 52, 64, 0.5);
+}
+
+.control-input[type="radio"]:disabled + .control-mark::before,
+.control-input[type="radio"]:hover:disabled + .control-mark::before {
+  background-color: rgba(45, 52, 64, 0.5);
 }
 
 
