@@ -781,7 +781,6 @@ body {
   margin: 0 auto;
   padding-top: 48px;
   padding-bottom: 57px;
-  border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 .page-footer-container {
@@ -858,6 +857,10 @@ body {
 
 
 /* Catalog */
+.page-container-inner {
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+}
+
 /* Breadcrumbs */
 .breadcrumbs {
   display: flex;
