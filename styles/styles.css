@@ -1144,6 +1144,8 @@ body {
   width: 16px;
   height: 16px;
   background-image: url("../images/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -1591,18 +1593,22 @@ body {
 }
 
 /* Popover Cart */
-.popover-cart-container {
+/* full */
+.popover-cart-container-full {
   box-sizing: border-box;
   width: 441px;
   padding: 48px;
+  display: none;
 }
 
 .popover-cart-list {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 32px 0;
   margin: 0;
+  margin-bottom: 32px;
   list-style-type: none;
+  border-bottom: 1px solid #E7E7E7;;
 }
 
 .popover-cart-item {
@@ -1611,9 +1617,12 @@ body {
   margin-bottom: 24px;
 }
 
+.popover-cart-item:last-child {
+  margin-bottom: 0;
+}
+
 .popover-cart-title {
-  margin-top: 0;
-  margin-bottom: 32px;
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1621,6 +1630,7 @@ body {
 .popover-product-image {
   display: block;
   margin-right: 16px;
+  border-radius: 50%;
 }
 
 .popover-product-wrapper {
@@ -1649,4 +1659,96 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+}
+
+.popover-product-delete {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #FCFCFC;
+  border: none;
+  background-image: url("/images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.popover-cart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popover-cart-total {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* empty */
+.popover-cart-container-empty {
+  padding: 48px 0;
+  display: none;
+}
+
+.popover-cart-description-empty {
+  display: block;
+  width: 288px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+/* Popover Login */
+.popover-login {
+  padding: 48px 48px 52px 48px;
+  display: none;
+}
+
+.popover-login-title {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popover-login-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.popover-login-item {
+  margin-bottom: 16px;
+}
+
+.popover-login-item:last-of-type {
+  margin-bottom: 32px;
+}
+
+.popover-login-field {
+  width: 324px;
+}
+
+.popover-login-link-wrap {
+  display: flex;
+}
+
+.popover-login-button {
+  margin-right: 23px;
+}
+
+.popover-login-info-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.popover-login-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
 }

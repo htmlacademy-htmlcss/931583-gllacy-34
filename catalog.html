@@ -13,7 +13,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item navigation-logo">
-            <a class="logo-link">
+            <a class="logo-link" href="index.html">
               <img class="logo" src="images/logo_gllacy.svg" width="137" height="56"
                 alt="Логотип магазина мороженного Глейси">
             </a>
@@ -78,6 +78,32 @@
               </svg>
               Вход
             </a>
+            <div class="popover popover-login">
+              <h2 class="popover-login-title">Личный кабинет</h2>
+              <form class="popover-login-form">
+                <ul class="popover-login-list">
+                  <li class="popover-login-item">
+                    <label class="visually-hidden" for="login-email">E-mail</label>
+                    <input class="field popover-login-field" type="email" name="login-email" id="login-email" placeholder="email@example.com">
+                  </li>
+                  <li class="popover-login-item">
+                    <label class="visually-hidden" for="login-password">E-mail</label>
+                    <input class="field popover-login-field" type="password" name="login-password" id="login-password">
+                  </li>
+                </ul>
+                <div class="popover-login-link-wrap">
+                  <button class="button-other popover-login-button" type="button">Войти</button>
+                  <ul class="popover-login-info-list">
+                    <li>
+                      <a class="popover-login-link" href="#">Забыли пароль?</a>
+                    </li>
+                    <li>
+                      <a class="popover-login-link" href="#">Регистрация</a>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-user navigation-card" href="#">
@@ -90,7 +116,7 @@
               2 товара
             </a>
             <div class="popover popover-cart">
-              <div class="popover-cart-container">
+              <div class="popover-cart-container-full">
                 <h2 class="popover-cart-title">Корзина</h2>
                 <ul class="popover-cart-list">
                   <li class="popover-cart-item">
@@ -102,11 +128,23 @@
                       <span class="popover-product-price">310 ₽</span>
                       <button class="popover-product-delete" type="button"></button>
                   </li>
+                  <li class="popover-cart-item">
+                    <img class="popover-product-image" src="images/products/bubblegam.jpg" width="46" height="46" alt="Мороженное со вкусом бабл-гам">
+                    <div class="popover-product-wrapper">
+                      <h3 class="popover-product-title">Бабл-гам</h3>
+                      <p class="popover-product-details">1.5 кг х 320 ₽</p>
+                    </div>
+                      <span class="popover-product-price">480 ₽</span>
+                      <button class="popover-product-delete" type="button"></button>
+                  </li>
                 </ul>
                 <div class="popover-cart-wrapper">
                   <a class="button-other" href="#">Оформить заказ</a>
                   <b class="popover-cart-total">Итого: 790 ₽</b>
                 </div>
+              </div>
+              <div class="popover-cart-container-empty">
+                <b class="popover-cart-description-empty">Ваша корзина пока пуста</b>
               </div>
             </div>
           </li>
@@ -157,10 +195,10 @@
                   <div class="range">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 30px; width: 58px">
-                        <button class="range-toggle toggle-min">
+                        <button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
-                        <button class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button">
                           <span class="visually-hidden">Изменить максимальную цену.</span>
                         </button>
                       </div>
