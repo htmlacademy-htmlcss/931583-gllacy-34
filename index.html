@@ -61,7 +61,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <div class="popover popover-search">
-              <form class="popover-search-form">
+              <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search-input">Поиск</label>
                 <input class="field popover-search-field" type="search" name="search" id="search-input" placeholder="Поиск по сайту">
               </form>
@@ -79,7 +79,7 @@
             </a>
             <div class="popover popover-login">
               <h2 class="popover-login-title">Личный кабинет</h2>
-              <form class="popover-login-form">
+              <form class="popover-login-form" action="https://echo.htmlacademy.ru/" method="post">
                 <ul class="popover-login-list">
                   <li class="popover-login-item">
                     <label class="visually-hidden" for="login-email">E-mail</label>
@@ -535,6 +535,33 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <b class="modal-title">Мы обязательно ответим вам!</b>
+          <form class="modal-contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-contacts-container">
+              <p class="modal-contacts-item">
+                <label class="visually-hidden" for="modal-name">Имя и фамилия</label>
+                <input class="field modal-field" type="text" name="modal-name" placeholder="Имя и фамилия">
+              </p>
+              <p class="modal-contacts-item">
+                <label class="visually-hidden" for="modal-email">E-mail</label>
+                <input class="field modal-field" type="email" name="modal-email" id="modal-email" placeholder="email@example.com">
+              </p>
+              <p class="modal-contacts-item">
+                <label class="visually-hidden" for="modal-message">Сообщение</label>
+                <textarea class="field modal-textarea" name="modal-message" id="modal-message" placeholder="В свободной форме"></textarea>
+              </p>
+              <button class="button-other modal-button" type="button">Отправить</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
