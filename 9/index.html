@@ -25,7 +25,6 @@
                 <li class="popover-catalog-item">
                   <a class="popover-catalog-link" href="#">Новинки</a>
                 </li>
-                <p class="popover-catalog-line"></p>
                 <li class="popover-catalog-item">
                   <a class="popover-catalog-link" href="#">Сливочное</a>
                 </li>
@@ -89,12 +88,12 @@
                       placeholder="email@example.com">
                   </li>
                   <li class="popover-login-item">
-                    <label class="visually-hidden" for="login-password">E-mail</label>
+                    <label class="visually-hidden" for="login-password">Пароль</label>
                     <input class="field popover-login-field" type="password" name="login-password" id="login-password">
                   </li>
                 </ul>
                 <div class="popover-login-link-wrap">
-                  <button class="button-other popover-login-button" type="button">Войти</button>
+                  <button class="button-other popover-login-button" type="submit">Войти</button>
                   <ul class="popover-login-info-list">
                     <li>
                       <a class="popover-login-link" href="#">Забыли пароль?</a>
@@ -122,24 +121,36 @@
                 <h2 class="popover-cart-title">Корзина</h2>
                 <ul class="popover-cart-list">
                   <li class="popover-cart-item">
-                    <img class="popover-product-image" src="images/products/raspberry.jpg" width="46" height="46"
+                    <a class="popover-product-link" href="#">
+                      <img class="popover-product-image" src="images/products/raspberry.jpg" width="46" height="46"
                       alt="Малиновое мороженое">
+                    </a>
                     <div class="popover-product-wrapper">
-                      <h3 class="popover-product-title">Малинка</h3>
+                      <a class="popover-product-link" href="#">
+                        <h3 class="popover-product-title">Малинка</h3>
+                      </a>
                       <p class="popover-product-details">1 кг х 310 ₽</p>
                     </div>
                     <span class="popover-product-price">310 ₽</span>
-                    <button class="popover-product-delete" type="button"></button>
+                    <button class="popover-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
                   </li>
                   <li class="popover-cart-item">
-                    <img class="popover-product-image" src="images/products/bubblegam.jpg" width="46" height="46"
+                    <a class="popover-product-link" href="#">
+                      <img class="popover-product-image" src="images/products/bubblegam.jpg" width="46" height="46"
                       alt="Мороженное со вкусом бабл-гам">
+                    </a>
                     <div class="popover-product-wrapper">
-                      <h3 class="popover-product-title">Бабл-гам</h3>
+                      <a class="popover-product-link" href="#">
+                        <h3 class="popover-product-title">Бабл-гам</h3>
+                      </a>
                       <p class="popover-product-details">1.5 кг х 320 ₽</p>
                     </div>
                     <span class="popover-product-price">480 ₽</span>
-                    <button class="popover-product-delete" type="button"></button>
+                    <button class="popover-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
                   </li>
                 </ul>
                 <div class="popover-cart-wrapper">
@@ -441,7 +452,15 @@
             </p>
             <div class="delivary-form-container">
               <p class="field-group delivery-form-date">
-                <label class="delivery-label" for="delivery-date">Дата</label>
+                <span class="delivery-label">
+                  <label class="delivery-label" for="delivery-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите желаемую дату доставки мороженого</span>
+                  </span>
+                </span>
                 <input class="field delivery-field-date" type="text" id="delivery-date" name="delivery-date"
                   placeholder="01.04.2020">
               </p>
@@ -451,7 +470,15 @@
                   placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group delivery-form-address">
-                <label class="delivery-label" for="delivery-address">Адрес</label>
+                <span class="delivery-label">
+                  <label class="delivery-label" for="delivery-address">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название улицы, дома и квартиры</span>
+                  </span>
+                </span>
                 <input class="field delivrery-field-address" type="text" id="delivery-address" name="delivery-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>
@@ -563,7 +590,7 @@
                 <textarea class="field modal-textarea" name="modal-message" id="modal-message"
                   placeholder="В свободной форме"></textarea>
               </p>
-              <button class="button-other modal-button" type="button">Отправить</button>
+              <button class="button-other modal-button" type="submit">Отправить</button>
             </div>
           </form>
         </section>
