@@ -446,11 +446,11 @@ body {
 }
 
 .gifts-item:first-child {
-  background-image: url('../images/raspberry_gifts.png');
+  background-image: url("../images/raspberry_gifts.png");
 }
 
 .gifts-item:last-child {
-  background-image: url('../images/marshmellow_gifts.png');
+  background-image: url("../images/marshmellow_gifts.png");
 }
 
 .gifts-title {
@@ -722,7 +722,7 @@ body {
   height: 14px;
   background-color: transparent;
   border: none;
-  background-image: url("/images/icons/info.svg");
+  background-image: url("../images/icons/info.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -838,7 +838,7 @@ body {
   left: -22px;
   width: 16px;
   height: 16px;
-  background: no-repeat url('../images/icons/heart.svg');
+  background: no-repeat url("../images/icons/heart.svg");
   content: "";
 }
 
@@ -888,7 +888,7 @@ body {
   right: -18px;
   width: 8px;
   height: 8px;
-  background: no-repeat url('../images/icons/arrow-double.svg');
+  background: no-repeat url("../images/icons/arrow-double.svg");
   content: "";
 }
 
@@ -918,7 +918,7 @@ body {
 
 /* FILTER */
 .filter {
-  margin-bottom: 44px;
+  margin-bottom: 28px;
 }
 
 .filter-form {
@@ -939,8 +939,8 @@ body {
   margin-bottom: 16px;
 }
 
-.filter-item:last-of-type {
-  margin-bottom: 0;
+.filter-item:last-child {
+  align-self: flex-end;
 }
 
 .filter-group-list {
@@ -964,7 +964,6 @@ body {
 }
 
 .filter-button {
-  align-self: flex-end;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -1562,13 +1561,18 @@ body {
   list-style-type: none;
 }
 
-.popover-catalog-line {
-  margin: 4px 16px;
-  border-top: 1px solid #B9B9B9;
-}
-
 .popover-catalog-item:first-child {
   font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.popover-catalog-item:first-child::after {
+  position: absolute;
+  height: 1px;
+  width: 103px;
+  margin: 4px 16px;
+  background-color: #B9B9B9;
+  content: "";
 }
 
 .popover-catalog-link {
@@ -1635,6 +1639,11 @@ body {
   border-radius: 50%;
 }
 
+.popover-product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .popover-product-wrapper {
   display: flex;
   flex-direction: column;
@@ -1669,7 +1678,7 @@ body {
   height: 10px;
   background-color: #FCFCFC;
   border: none;
-  background-image: url("/images/icons/close.svg");
+  background-image: url("../images/icons/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1791,7 +1800,7 @@ body {
   height: 30px;
   background-color: #FCFCFC;
   border: none;
-  background-image: url("/images/icons/close.svg");
+  background-image: url("../images/icons/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px 13px;
