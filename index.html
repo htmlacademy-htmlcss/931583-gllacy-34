@@ -451,7 +451,15 @@
             </p>
             <div class="delivary-form-container">
               <p class="field-group delivery-form-date">
-                <label class="delivery-label" for="delivery-date">Дата</label>
+                <span class="delivery-label">
+                  <label class="delivery-label" for="delivery-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите желаемую дату доставки мороженого</span>
+                  </span>
+                </span>
                 <input class="field delivery-field-date" type="text" id="delivery-date" name="delivery-date"
                   placeholder="01.04.2020">
               </p>
@@ -461,7 +469,15 @@
                   placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group delivery-form-address">
-                <label class="delivery-label" for="delivery-address">Адрес</label>
+                <span class="delivery-label">
+                  <label class="delivery-label" for="delivery-address">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название улицы, дома и квартиры</span>
+                  </span>
+                </span>
                 <input class="field delivrery-field-address" type="text" id="delivery-address" name="delivery-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>
