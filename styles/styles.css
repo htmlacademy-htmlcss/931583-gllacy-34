@@ -238,7 +238,7 @@ body {
   left: calc(50% - 156px);
   width: 312px;
   height: 312px;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
   content: "";
   z-index: -1;
@@ -258,7 +258,7 @@ body {
   left: calc(50% - 50px);
   width: 100px;
   height: 100px;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
   content: "";
   z-index: -1;

@@ -9,12 +9,16 @@
   </head>
 
   <body>
+
+    <!-- HEADER -->
     <header class="page-header">
       <nav class="navigation">
         <a class="logo-link navigation-logo">
           <img class="logo" src="images/logo_gllacy.svg" width="137" height="56"
             alt="Логотип магазина мороженного Глейси">
         </a>
+
+        <!-- Navigation -->
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -45,6 +49,8 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
+
+        <!-- Navigation User -->
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-tel" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -58,6 +64,7 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
+            <!-- Popover Search -->
             <div class="popover popover-search">
               <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search-input">Поиск</label>
@@ -76,6 +83,7 @@
               </svg>
               Вход
             </a>
+            <!-- Popover Login -->
             <div class="popover popover-login">
               <h2 class="popover-login-title">Личный кабинет</h2>
               <form class="popover-login-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -114,6 +122,7 @@
               </svg>
               2 товара
             </a>
+            <!-- Popover Cart -->
             <div class="popover popover-cart">
               <div class="popover-cart-container-full">
                 <h2 class="popover-cart-title">Корзина</h2>
@@ -121,7 +130,7 @@
                   <li class="popover-cart-item">
                     <a class="popover-product-link" href="#">
                       <img class="popover-product-image" src="images/products/raspberry.jpg" width="46" height="46"
-                      alt="Малиновое мороженое">
+                        alt="Малиновое мороженое">
                     </a>
                     <div class="popover-product-wrapper">
                       <a class="popover-product-link" href="#">
@@ -137,7 +146,7 @@
                   <li class="popover-cart-item">
                     <a class="popover-product-link" href="#">
                       <img class="popover-product-image" src="images/products/bubblegam.jpg" width="46" height="46"
-                      alt="Мороженное со вкусом бабл-гам">
+                        alt="Мороженное со вкусом бабл-гам">
                     </a>
                     <div class="popover-product-wrapper">
                       <a class="popover-product-link" href="#">
@@ -165,12 +174,16 @@
       </nav>
     </header>
 
+    <!-- MAIN -->
     <main class="main-container main-index">
       <div class="page-container">
         <h1 class="visually-hidden">Интернет-магазин мороженного Глейси</h1>
 
+        <!-- Slider -->
         <section class="slider">
           <h2 class="visually-hidden">Слайдер мороженного</h2>
+
+          <!-- Slide 1 -->
           <div class="slide">
             <div class="slide-content">
               <h3 class="slide-title">Нежный пломбир <br>с клубничным джемом</h3>
@@ -210,30 +223,90 @@
                 height="507" alt="Пломбир с маршмеллоу">
             </div>
           </div>
-          <!--
-        <div class="slide">
-          <div class="slide-content">
-            <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
-            <p class="slide-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
-              и наслаждение даже в самый жаркий летний день.
-            </p>
-            <a class="button" href="#">Заказать</a>
-          </div>
-          <img class="slide-image slider-image-big" src="images/slides/slide_banana.png" width="306" height="507"
-            alt="Банановый пломбир">
-        </div>
 
-        <div class="slide">
-          <div class="slide-content">
-            <h3 class="slide-title">Карамельный пломбир с маршмеллоу</h3>
-            <p class="slide-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
-              сердца сладкоежек всех возрастов.
-            </p>
-            <a class="button" href="#">Заказать</a>
+          <!-- Slide 2  -->
+          <div class="slide visually-hidden">
+            <div class="slide-content">
+              <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
+              <p class="slide-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
+                и наслаждение даже в самый жаркий летний день.
+              </p>
+              <a class="button" href="#">Заказать</a>
+            </div>
+            <div class="slide-image-container">
+              <img class="slide-image" src="images/slides/slide_banana.png" width="306" height="507"
+                alt="Банановый пломбир">
+              <div class="slide-button-container">
+                <button class="slider-button slider-button-prev" type="button">
+                  <svg class="slider-button-prev-icon" width="6" height="12" viewBox="0 0 6 12" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L1.6 6l4.2-4.2Z" />
+                  </svg>
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button class="slider-button slider-button-next" type="button">
+                  <svg class="slider-button-next-icon" width="7" height="12" viewBox="0 0 7 12" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z" />
+                  </svg>
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
+              </div>
+            </div>
+            <div class="slide-image-small-container">
+              <img class="slide-image slide-image-small" src="images/slides/slide_marshmallow.png" width="306"
+                height="507" alt="Пломбир с маршмеллоу">
+            </div>
+            <div class="slide-image-small-container">
+              <img class="slide-image slide-image-small" src="images/slides/slide_strawberry.png" width="306"
+                height="507" alt="Клубничный пломбир">
+            </div>
           </div>
-          <img class="slide-image slider-image-big" src="images/slides/slide_marshmallow.png" alt="Пломбир с маршмеллоу">
-        </div> -->
 
+          <!-- Slide 3 -->
+          <div class="slide visually-hidden">
+            <div class="slide-content">
+              <h3 class="slide-title">Карамельный пломбир с маршмеллоу</h3>
+              <p class="slide-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+                сердца сладкоежек всех возрастов.
+              </p>
+              <a class="button" href="#">Заказать</a>
+            </div>
+            <div class="slide-image-container">
+              <img class="slide-image" src="images/slides/slide_marshmallow.png" width="306" height="507"
+                alt="Пломбир с маршмеллоу">
+              <div class="slide-button-container">
+                <button class="slider-button slider-button-prev" type="button">
+                  <svg class="slider-button-prev-icon" width="6" height="12" viewBox="0 0 6 12" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L1.6 6l4.2-4.2Z" />
+                  </svg>
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button class="slider-button slider-button-next" type="button">
+                  <svg class="slider-button-next-icon" width="7" height="12" viewBox="0 0 7 12" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z" />
+                  </svg>
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
+              </div>
+            </div>
+            <div class="slide-image-small-container">
+              <img class="slide-image slide-image-small" src="images/slides/slide_strawberry.png" width="306"
+                height="507" alt="Клубничный пломбир">
+            </div>
+            <div class="slide-image-small-container">
+              <img class="slide-image slide-image-small" src="images/slides/slide_banana.png" width="306" height="507"
+                alt="Банановый пломбир">
+            </div>
+          </div>
+
+          <!-- Flip and Social -->
           <div class="slider-social-container">
             <ol class="slider-flip-list">
               <li class="slider-flip-item">
@@ -284,6 +357,7 @@
           </div>
         </section>
 
+        <!-- Gifts -->
         <section class="gifts">
           <h2 class="gifts-title">Заказывайте мороженое<br> и получайте подарки!</h2>
           <ul class="gifts-list">
@@ -302,6 +376,7 @@
           </ul>
         </section>
 
+        <!-- Popular Products -->
         <section class="popular-products">
           <h2 class="popular-products-title">Попробуйте самые популярные<br> вкусы нашего мороженого</h2>
           <ul class="popular-products-list">
@@ -384,6 +459,7 @@
           </ul>
         </section>
 
+        <!-- Advanteges -->
         <section class="advantages">
           <div class="advantages-container">
             <h2 class="advantages-title">Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженого
@@ -411,6 +487,8 @@
         </section>
 
         <div class="blog-newsletter-container">
+
+          <!-- Blog -->
           <section class="blog">
             <h2 class="visually-hidden">Последние новости из нашего блога</h2>
             <p class="blog-description">Новое в нашем блоге</p>
@@ -419,6 +497,7 @@
             </h3>
           </section>
 
+          <!-- Newsletter -->
           <section class="newsletter">
             <div class="newsletter-container">
               <h2 class="visually-hidden">Подписка на нашу рассылку</h2>
@@ -436,6 +515,7 @@
           </section>
         </div>
 
+        <!-- Delivary -->
         <section class="delivery">
           <div class="delivery-container">
             <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
@@ -454,9 +534,14 @@
                   <label class="delivery-label" for="delivery-date">Дата</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
+                      </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите желаемую дату доставки мороженого</span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите желаемую дату доставки
+                      мороженого</span>
                   </span>
                 </span>
                 <input class="field delivery-field-date" type="text" id="delivery-date" name="delivery-date"
@@ -472,9 +557,14 @@
                   <label class="delivery-label" for="delivery-address">Адрес</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
-                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                      <svg class="tooltip-icon" width="14" height="14" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 1 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z" />
+                      </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и
+                      квартиры</span>
                   </span>
                 </span>
                 <input class="field delivrery-field-address" type="text" id="delivery-address" name="delivery-address"
@@ -485,6 +575,7 @@
           </form>
         </section>
 
+        <!-- Contacts -->
         <section class="contacts">
           <div class="contacts-container">
             <h2 class="visually-hidden">Контакты магазина</h2>
@@ -501,8 +592,10 @@
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="page-footer">
       <div class="page-footer-container">
+        <!-- Social -->
         <section class="footer-social">
           <h2 class="visually-hidden">Наши социальные сети</h2>
           <ul class="social-list">
@@ -535,7 +628,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- Links -->
         <section class="footer-links">
           <h2 class="visually-hidden">Полезные ссылки</h2>
           <ul class="footer-links-list">
@@ -553,7 +646,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- Copyright -->
         <section class="footer-copyright">
           <h2 class="visually-hidden">Копирайт</h2>
           <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
@@ -565,6 +658,8 @@
         </section>
       </div>
     </footer>
+
+    <!-- Modal -->
     <div class="modal-container">
       <div class="modal">
         <button class="modal-close-button">
@@ -577,7 +672,8 @@
             <div class="modal-contacts-container">
               <p class="modal-contacts-item">
                 <label class="visually-hidden" for="modal-name">Имя и фамилия</label>
-                <input class="field modal-field" type="text" name="modal-name" id="modal-name" placeholder="Имя и фамилия">
+                <input class="field modal-field" type="text" name="modal-name" id="modal-name"
+                  placeholder="Имя и фамилия">
               </p>
               <p class="modal-contacts-item">
                 <label class="visually-hidden" for="modal-email">E-mail</label>
