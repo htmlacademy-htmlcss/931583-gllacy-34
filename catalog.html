@@ -10,12 +10,15 @@
 
   <body>
 
+    <!-- HEADER -->
     <header class="page-header">
       <nav class="navigation">
         <a class="logo-link navigation-logo" href="index.html">
           <img class="logo" src="images/logo_gllacy.svg" width="137" height="56"
-            alt="Логотип магазина мороженного Глейси">
+            alt="Логотип магазина мороженного Глейси.">
         </a>
+
+        <!-- Navigation -->
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
@@ -46,6 +49,8 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
+
+        <!-- Navigation User -->
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-tel" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -59,6 +64,7 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
+            <!-- Popover Search -->
             <div class="popover popover-search">
               <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search-input">Поиск</label>
@@ -77,6 +83,7 @@
               </svg>
               Вход
             </a>
+            <!-- Popover Login -->
             <div class="popover popover-login">
               <h2 class="popover-login-title">Личный кабинет</h2>
               <form class="popover-login-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -115,6 +122,7 @@
               </svg>
               2 товара
             </a>
+            <!-- Popover Cart -->
             <div class="popover popover-cart">
               <div class="popover-cart-container-full">
                 <h2 class="popover-cart-title">Корзина</h2>
@@ -122,7 +130,7 @@
                   <li class="popover-cart-item">
                     <a class="popover-product-link" href="#">
                       <img class="popover-product-image" src="images/products/raspberry.jpg" width="46" height="46"
-                      alt="Малиновое мороженое">
+                        alt="Малиновое мороженое.">
                     </a>
                     <div class="popover-product-wrapper">
                       <a class="popover-product-link" href="#">
@@ -138,7 +146,7 @@
                   <li class="popover-cart-item">
                     <a class="popover-product-link" href="#">
                       <img class="popover-product-image" src="images/products/bubblegam.jpg" width="46" height="46"
-                      alt="Мороженное со вкусом бабл-гам">
+                        alt="Мороженное со вкусом бабл-гам.">
                     </a>
                     <div class="popover-product-wrapper">
                       <a class="popover-product-link" href="#">
@@ -166,9 +174,11 @@
       </nav>
     </header>
 
+    <!-- MAIN -->
     <main class="main-container main-inner">
       <div class="page-container page-container-inner">
         <header class="inner-header">
+          <!-- Breadcrumbs -->
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -180,6 +190,7 @@
           <h1 class="inner-header-title">Сливочное мороженое</h1>
         </header>
 
+        <!-- Filter -->
         <section class="filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -301,10 +312,10 @@
                 <button class="filter-button" type="submit">Применить</button>
               </li>
             </ul>
-
           </form>
         </section>
 
+        <!-- Catalog -->
         <section class="catalog-products">
           <h2 class="visually-hidden">Каталог</h2>
           <ul class="products-list">
@@ -458,7 +469,7 @@
                   alt="Лимонное мороженое">
                 <h3 class="product-card-title">Лимон</h3>
               </a>
-              <p class="product-card-description">Освежающий лимонный щербет</p>
+              <p class="product-card-description">Освежающий лимонный сорбет</p>
               <div class="product-card-price-container">
                 <span class="product-card-price">310 ₽/кг</span>
                 <a class="product-button-card" href="#">
@@ -476,7 +487,7 @@
                   alt="Ментоловое мороженое">
                 <h3 class="product-card-title">Ментол</h3>
               </a>
-              <p class="product-card-description">Сливочный пломбир<br> с ментоловым вкусом</p>
+              <p class="product-card-description">Сливочный пломбир<br> с ментоловым сиропом</p>
               <div class="product-card-price-container">
                 <span class="product-card-price">320 ₽/кг</span>
                 <a class="product-button-card" href="#">
@@ -490,7 +501,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/products/nut.jpg" width="168" height="168"
+                <img class="product-card-image" src="images/products/cremebrulee.jpg" width="168" height="168"
                   alt="Фисташковое мороженое с шоколадным сиропом">
                 <h3 class="product-card-title">Орешек</h3>
               </a>
@@ -508,7 +519,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/products/cremebrulee.jpg" width="168" height="168"
+                <img class="product-card-image" src="images/products/nut.jpg" width="168" height="168"
                   alt="Мороженое со вкусом крем-брюле">
                 <h3 class="product-card-title">Крем-брюле</h3>
               </a>
@@ -529,6 +540,7 @@
           <div class="pagination-container">
             <button class="button pagination-button" type="button">Показать ещё</button>
 
+            <!-- Pagination -->
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-prev pagination-disabled">
@@ -561,8 +573,10 @@
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="page-footer">
       <div class="page-footer-container">
+        <!-- Social -->
         <section class="footer-social">
           <h2 class="visually-hidden">Наши социальные сети</h2>
           <ul class="social-list">
@@ -598,7 +612,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- Links -->
         <section class="footer-links">
           <h2 class="visually-hidden">Полезные ссылки</h2>
           <ul class="footer-links-list">
@@ -616,12 +630,12 @@
             </li>
           </ul>
         </section>
-
+        <!-- Copyright -->
         <section class="footer-copyright">
           <h2 class="visually-hidden">Копирайт</h2>
           <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
             <img class="htmlacamedy-logo" src="images/logo_htmlacademy.svg" width="93" height="27"
-              alt="Логотип HTML Acamedy">
+              alt="Логотип HTML Acamedy.">
           </a>
           <p class="copyright-description">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
               academy</a> © 2021</p>
