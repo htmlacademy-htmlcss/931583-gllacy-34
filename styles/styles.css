@@ -230,10 +230,6 @@ img {
   padding-top: 21px;
 }
 
-.slide-hidden {
-  display: none;
-}
-
 .slide-content {
   display: flex;
   width: 470px;
@@ -241,38 +237,41 @@ img {
   justify-content: center;
   align-items: flex-start;
   margin-left: 70px;
+  margin-right: 21px;
 }
 
-.slide-image-container {
+.slide-button {
+  display: block;
+  width: fit-content;
+}
+
+.slide-content-item {
+  display: none;
+}
+
+.slide-content-item.slide-content-active {
+  display: block;
+}
+
+.slide-images-container {
   position: relative;
-  width: 312px;
-  margin: 0 21px 0 21px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
-.slide-image-container::before {
-  position: absolute;
-  top: calc(50% - 156px);
-  left: calc(50% - 156px);
-  width: 312px;
-  height: 312px;
-  background-color: rgba(252, 252, 252, 0.3);
-  border-radius: 50%;
-  content: "";
-  z-index: -1;
-}
-
-.slide-image-small-container {
+.slide-image-item {
   position: relative;
+  display: flex;
+  align-items: center;
   width: 100px;
-  height: 150px;
-  opacity: 40%;
-  margin-left: 37px;
+  order: 3;
+  opacity: 0.4;
 }
 
-.slide-image-small-container::before {
+.slide-image-item::before {
   position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
   width: 100px;
   height: 100px;
   background-color: rgba(252, 252, 252, 0.3);
@@ -281,26 +280,36 @@ img {
   z-index: -1;
 }
 
+.slide-image-item.slide-image-active {
+  width: 306px;
+  margin-right: 20px;
+  order: 1;
+  opacity: 1;
+}
+
+.slide-image-item.slide-image-active::before {
+  width: 312px;
+  height: 312px;
+}
+
+.slide-image-active + .slide-image-item {
+  order: 2;
+}
 
 .slide-image {
   display: block;
 }
 
-.slide-image-small {
-  max-height: 100%;
-  width: auto;
-}
-
-.slide-button-container {
+.slide-toggle-container {
   position: absolute;
+  top: 50%;
   display: flex;
   justify-content: space-between;
-  top: 50%;
+  width: 312px;
   transform: translateY(-50%);
-  width: 100%;
 }
 
-.slider-button {
+.toggle-button {
   position: relative;
   width: 36px;
   height: 36px;
@@ -312,39 +321,39 @@ img {
   cursor: pointer;
 }
 
-.slider-button:hover {
+.toggle-button:hover {
   background: no-repeat #fcfcfc center;
   color: #2d3440;
 }
 
-.slider-button:active {
+.toggle-button:active {
   background: no-repeat rgba(252, 252, 252, 0.5) center;
   color: #2d3440;
 }
 
-.slider-button:focus-visible {
+.toggle-button:focus-visible {
   background: no-repeat rgba(252, 252, 252, 0.3) center;
   outline: 2px solid #2d3440;
   color: #2d3440;
 }
 
-.slider-button:disabled {
+.toggle-button:disabled {
   background: no-repeat rgba(252, 252, 252, 0.3) center;
   box-shadow: inset 0 0 0 2px #fcfcfc;
   opacity: 0.4;
   color: #fcfcfc;
 }
 
-.slider-button-prev {
+.toggle-button-prev {
   left: -18px;
 }
 
-.slider-button-next {
+.toggle-button-next {
   right: -17px;
 }
 
-.slider-button-next-icon,
-.slider-button-prev-icon {
+.toggle-button-next-icon,
+.toggle-button-prev-icon {
   position: absolute;
   top: 0;
   bottom: 0;
