@@ -48,7 +48,7 @@ body {
 
 /* Color active slider */
 /* при переключении слайдера,
-добавляется класс в body, чтобы поменять background-color */
+добавляется класс в body, чтобы поменять background-color у всей страницы */
 body .slider-active-yellow {
   background-color: #fcc850;
 }
