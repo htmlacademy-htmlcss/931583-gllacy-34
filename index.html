@@ -6,6 +6,7 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -91,11 +92,12 @@
                   <li class="popover-login-item">
                     <label class="visually-hidden" for="login-email">E-mail</label>
                     <input class="field popover-login-field" type="email" name="login-email" id="login-email"
-                      placeholder="email@example.com">
+                      placeholder="email@example.com" required>
                   </li>
                   <li class="popover-login-item">
                     <label class="visually-hidden" for="login-password">Пароль</label>
-                    <input class="field popover-login-field" type="password" name="login-password" id="login-password">
+                    <input class="field popover-login-field" type="password" name="login-password" id="login-password"
+                      required>
                   </li>
                 </ul>
                 <div class="popover-login-link-wrap">
@@ -455,14 +457,14 @@
               <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="newsletter-email">Email</label>
                 <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
-                  id="newsletter-email">
+                  id="newsletter-email" required>
                 <button class="button-other newsletter-button" type="submit">Отправить</button>
               </form>
             </div>
           </section>
         </div>
 
-        <!-- Delivary -->
+        <!-- Delivery -->
         <section class="delivery">
           <div class="delivery-container">
             <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
@@ -475,7 +477,7 @@
               подтвердить
               заказ.
             </p>
-            <div class="delivary-form-container">
+            <div class="delivery-form-container">
               <p class="field-group delivery-form-date">
                 <span class="delivery-label">
                   <label class="delivery-label" for="delivery-date">Дата</label>
@@ -492,12 +494,12 @@
                   </span>
                 </span>
                 <input class="field delivery-field-date" type="text" id="delivery-date" name="delivery-date"
-                  placeholder="01.04.2020">
+                  placeholder="01.04.2020" required>
               </p>
               <p class="field-group delivery-form-tel">
                 <label class="delivery-label" for="delivery-tel">Телефон</label>
-                <input class="field delivary-field-tel" type="tel" id="delivery-tel" name="delivery-tel"
-                  placeholder="+7 800 999-00-00">
+                <input class="field delivery-field-tel" type="tel" id="delivery-tel" name="delivery-tel"
+                  placeholder="+7 800 999-00-00" required>
               </p>
               <p class="field-group delivery-form-address">
                 <span class="delivery-label">
@@ -515,7 +517,7 @@
                   </span>
                 </span>
                 <input class="field delivrery-field-address" type="text" id="delivery-address" name="delivery-address"
-                  placeholder="ул. Большая Конюшенная, 19/8">
+                  placeholder="ул. Большая Конюшенная, 19/8" required>
               </p>
               <button class="button-other delivery-submit" type="submit">Отправить</button>
             </div>
@@ -601,7 +603,7 @@
           <h2 class="visually-hidden">Копирайт</h2>
           <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
             <img class="htmlacamedy-logo" src="images/logo_htmlacademy.svg" width="93" height="27"
-              alt="Логотип HTML Acamedy.">
+              alt="Логотип HTML Academy.">
           </a>
           <p class="copyright-description">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
               academy</a> © 2021</p>
@@ -623,17 +625,17 @@
               <p class="modal-contacts-item">
                 <label class="visually-hidden" for="modal-name">Имя и фамилия</label>
                 <input class="field modal-field" type="text" name="modal-name" id="modal-name"
-                  placeholder="Имя и фамилия">
+                  placeholder="Имя и фамилия" required>
               </p>
               <p class="modal-contacts-item">
                 <label class="visually-hidden" for="modal-email">E-mail</label>
                 <input class="field modal-field" type="email" name="modal-email" id="modal-email"
-                  placeholder="email@example.com">
+                  placeholder="email@example.com" required>
               </p>
               <p class="modal-contacts-item">
                 <label class="visually-hidden" for="modal-message">Сообщение</label>
                 <textarea class="field modal-textarea" name="modal-message" id="modal-message"
-                  placeholder="В свободной форме"></textarea>
+                  placeholder="В свободной форме" required></textarea>
               </p>
               <button class="button-other modal-button" type="submit">Отправить</button>
             </div>

@@ -47,14 +47,15 @@ body {
 }
 
 /* Color active slider */
+/* при переключении слайдера,
+добавляется класс в body, чтобы поменять background-color */
 body .slider-active-yellow {
-  background: #fcc850;
+  background-color: #fcc850;
 }
 
 body .slider-active-blue {
-  background: #69a9ff;
+  background-color: #69a9ff;
 }
-
 
 img {
   max-width: 100%;
@@ -656,6 +657,7 @@ img {
   background-color: #fcfcfc;
   background-image: url("../images/newsletter_background.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   padding: 7px 6px;
   box-sizing: border-box;
@@ -695,6 +697,7 @@ img {
   background-color: #fcfcfc;
   background-image: url("../images/delivery_background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   margin-bottom: 80px;
   padding: 65px 64px 65px 100px;
@@ -720,7 +723,7 @@ img {
   margin: 0;
 }
 
-.delivary-form-container {
+.delivery-form-container {
   display: grid;
   grid-template-columns: 117px 287px;
   gap: 20px 16px;
@@ -830,6 +833,7 @@ img {
   background-color: #fcfcfc;
   background-image: url("../images/contacts_background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   padding: 64px;
 }
@@ -1056,6 +1060,7 @@ img {
 
 .filter-group-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 8px 24px 9px;
   margin: 0;
   background-color: rgba(252, 252, 252, 0.3);
@@ -1076,6 +1081,7 @@ img {
 
 .filter-button {
   width: 185px;
+  color: #2d3440;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -1217,6 +1223,7 @@ img {
 .range-input {
   width: 30px;
   padding: 0;
+  color: #2d3440;
   font: inherit;
   text-align: center;
   background-color: transparent;
@@ -1271,6 +1278,14 @@ img {
   background-image: url("../images/icons/checkbox-checked-hover.svg");
 }
 
+.control-input[type="checkbox"]:focus-visible + .control-mark {
+  box-shadow: 0 0 2px 2px #2d3440;
+}
+
+.control-input[type="checkbox"]:checked:focus-visible + .control-mark {
+  box-shadow: 0 0 2px 2px #2d3440;
+}
+
 .control-input[type="checkbox"]:disabled + .control-mark,
 .control-input[type="checkbox"]:disabled:hover + .control-mark {
   background-image: url("../images/icons/checkbox.svg");
@@ -1307,6 +1322,10 @@ img {
 
 .control-input[type="radio"]:hover + .control-mark::before {
   background-color: #fcfcfc;
+}
+
+.control-input[type="radio"]:focus-visible + .control-mark {
+  outline: 2px solid #2d3440;
 }
 
 .control-input[type="radio"]:disabled + .control-mark,
@@ -1523,18 +1542,15 @@ img {
   border-color: #2d3440;
 }
 
-.field:invalid,
 .field.error {
   box-shadow: none;
   border-color: #ea5454;
 }
 
-.field:invalid:hover,
 .field.error:hover {
   outline: 1px solid #ea5454;
 }
 
-.field:invalid:focus,
 .field.error:focus {
   outline: 1px solid #ea5454;
 }
