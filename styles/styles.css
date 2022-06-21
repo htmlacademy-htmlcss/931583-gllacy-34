@@ -47,11 +47,11 @@ body {
 }
 
 /* Color active slider */
-body .body-yellow {
+body .slider-active-yellow {
   background: #fcc850;
 }
 
-body .body-blue {
+body .slider-active-blue {
   background: #69a9ff;
 }
 
