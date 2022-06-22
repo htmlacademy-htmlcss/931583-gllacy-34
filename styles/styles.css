@@ -489,11 +489,11 @@ img {
 }
 
 .gifts-item:first-child {
-  background-image: url("../images/raspberry_gifts.png");
+  background-image: url("../images/raspberry-gifts.png");
 }
 
 .gifts-item:last-child {
-  background-image: url("../images/marshmellow_gifts.png");
+  background-image: url("../images/marshmellow-gifts.png");
 }
 
 .gifts-title {
@@ -546,7 +546,7 @@ img {
 
 /* Advantages */
 .advantages {
-  background: no-repeat url("../images/wafer_background.jpg") center;
+  background: no-repeat url("../images/wafer-background.jpg") center;
   background-color: #fcfcfc;
   background-size: cover;
   border-radius: 16px;
@@ -623,7 +623,7 @@ img {
 .blog {
   width: 570px;
   background-color: #fcfcfc;
-  background-image: url("../images/blog_background.jpg");
+  background-image: url("../images/blog-background.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
   padding: 32px;
@@ -655,7 +655,7 @@ img {
 .newsletter {
   width: 570px;
   background-color: #fcfcfc;
-  background-image: url("../images/newsletter_background.png");
+  background-image: url("../images/newsletter-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -695,7 +695,7 @@ img {
   display: flex;
   align-items: center;
   background-color: #fcfcfc;
-  background-image: url("../images/delivery_background.jpg");
+  background-image: url("../images/delivery-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -831,7 +831,7 @@ img {
 /* Contacts */
 .contacts {
   background-color: #fcfcfc;
-  background-image: url("../images/contacts_background.jpg");
+  background-image: url("../images/contacts-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
